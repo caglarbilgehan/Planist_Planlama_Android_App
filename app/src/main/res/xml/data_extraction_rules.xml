@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Örnek veri çıkarma kuralları dosyası; gerektiği şekilde açıklamaları kaldırın ve özelleştirin.
+   Ayrıntılar için şu bağlantıya bakabilirsiniz: https://developer.android.com/about/versions/12/backup-restore#xml-changes
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- TODO: Yedeklenmesini istediğiniz içerikleri kontrol etmek için <include> ve <exclude> kullanın.
+        <include .../>
+        <exclude .../>
+        -->
+    </cloud-backup>
+    <!--
+    <device-transfer>
+        <include .../>
+        <exclude .../>
+    </device-transfer>
+    -->
+</data-extraction-rules>

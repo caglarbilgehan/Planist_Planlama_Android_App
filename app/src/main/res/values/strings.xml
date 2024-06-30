@@ -1,0 +1,13 @@
+<resources>
+    <!-- Uygulama adı -->
+    <string name="app_name">Planist</string>
+
+    <!-- Boş parça için geçici metin -->
+    <string name="hello_blank_fragment">Merhaba boş parça</string>
+
+    <!-- Yer tutucu metin -->
+    <string name="place_holder">Yer Tutucu</string>
+
+    <!-- CheckBox için içerik açıklaması -->
+    <string name="checkbox">CheckBox</string>
+</resources>

@@ -1,0 +1,26 @@
+pluginManagement {
+    // Plugin yönetimi için kullanılan depoları tanımlar.
+    repositories {
+        gradlePluginPortal() // Gradle eklenti portalı
+        google()             // Google Maven deposu
+        mavenCentral()       // Maven Merkezi deposu
+    }
+}
+
+// Bağımlılık çözümleme yönetimi
+dependencyResolutionManagement {
+    // Proje deposu bulunamazsa başarısızlık durumunu ayarlar
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+
+    // Bağımlılıklar için kullanılan depoları tanımlar.
+    repositories {
+        google()         // Google Maven deposu
+        mavenCentral()   // Maven Merkezi deposu
+    }
+}
+
+// Proje adı
+rootProject.name = "Planist"
+
+// 'app' modülünü içerir
+include ':app'

@@ -1,0 +1,58 @@
+plugins {
+    id 'com.android.application' // Android uygulama plugini
+    id 'org.jetbrains.kotlin.android' // Kotlin Android plugini
+    id 'kotlin-kapt' // Kotlin annotation processing plugini
+}
+
+android {
+    compileSdk 33 // Derleme SDK sürümü
+
+    defaultConfig {
+        applicationId "com.example.todolisttutorial" // Uygulama kimliği (package ismi)
+        minSdk 26 // Minimum SDK sürümü
+        targetSdk 33 // Hedef SDK sürümü
+        versionCode 1 // Uygulama sürüm kodu (versionCode)
+        versionName "1.0" // Uygulama sürüm adı (versionName)
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner" // Test çalıştırma ortamı
+    }
+
+    buildFeatures {
+        viewBinding true // View Binding özelliğini etkinleştirme
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false // Küçültme (minification) işlemini devre dışı bırakma
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro' // Proguard dosyaları
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8 // Kaynak uyumluluğu
+        targetCompatibility JavaVersion.VERSION_1_8 // Hedef uyumluluğu
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8' // Kotlin JVM hedef sürümü
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.9.0' // AndroidX Core KTX kütüphanesi
+    implementation 'androidx.appcompat:appcompat:1.5.1' // AndroidX AppCompat kütüphanesi
+    implementation 'com.google.android.material:material:1.6.1' // Material Design kütüphanesi
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4' // ConstraintLayout kütüphanesi
+    testImplementation 'junit:junit:4.13.2' // JUnit test kütüphanesi
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3' // Android JUnit test kütüphanesi
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0' // Espresso UI test kütüphanesi
+
+    implementation "androidx.room:room-ktx:2.4.3" // AndroidX Room KTX kütüphanesi
+    kapt "androidx.room:room-compiler:2.4.3" // Room annotation processing plugini
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1" // AndroidX Lifecycle LiveData KTX kütüphanesi
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1" // AndroidX Lifecycle ViewModel KTX kütüphanesi
+    implementation "androidx.activity:activity-ktx:1.6.0" // AndroidX Activity KTX kütüphanesi
+    implementation "androidx.fragment:fragment-ktx:1.5.3" // AndroidX Fragment KTX kütüphanesi
+    annotationProcessor "android.arch.persistence.room:compiler:1.1.1" // Room annotation processor
+    implementation 'androidx.room:room-runtime:2.4.3' // AndroidX Room Runtime kütüphanesi
+}

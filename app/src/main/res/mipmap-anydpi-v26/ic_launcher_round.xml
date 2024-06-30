@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Adaptive icon XML dosyası -->
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Arka plan drawable'ı -->
+    <background android:drawable="@drawable/ic_launcher_background" />
+
+    <!-- Ön plan drawable'ı -->
+    <foreground android:drawable="@drawable/ic_launcher_foreground" />
+</adaptive-icon>

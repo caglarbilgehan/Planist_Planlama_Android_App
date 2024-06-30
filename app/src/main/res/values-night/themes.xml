@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Temel uygulama teması. -->
+    <style name="Theme.TodoListTutorial" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Ana marka rengi. -->
+        <item name="colorPrimary">@color/black</item>
+        <!-- Ana marka rengi varyantı. -->
+        <item name="colorPrimaryVariant">@color/dark_gray</item>
+        <!-- Ana marka rengi üzerindeki metin rengi. -->
+        <item name="colorOnPrimary">@color/black</item>
+
+        <!-- İkincil marka rengi. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <!-- İkincil marka rengi varyantı. -->
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <!-- İkincil marka rengi üzerindeki metin rengi. -->
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Durum çubuğu (status bar) rengi. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+    </style>
+</resources>

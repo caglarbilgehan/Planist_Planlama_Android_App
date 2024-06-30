@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Örnek yedekleme kuralları dosyası; gerektiği şekilde açıklamaları kaldırın ve özelleştirin.
+   Ayrıntılar için şu bağlantıya bakabilirsiniz: https://developer.android.com/guide/topics/data/autobackup
+   Not: Bu dosya, API seviyesi 31'den düşük olan cihazlar için yoksayılır.
+   Ayrıntılar için şu bağlantıya bakabilirsiniz: https://developer.android.com/about/versions/12/backup-restore
+-->
+<full-backup-content>
+    <!--
+       <include domain="sharedpref" path="."/>
+       <exclude domain="sharedpref" path="device.xml"/>
+    -->
+</full-backup-content>
